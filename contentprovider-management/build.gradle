@@ -1,13 +1,31 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+    }
+}
+
+
 apply plugin: 'com.android.application'
 
+repositories {
+    mavenCentral()
+    google()
+    jcenter()
+}
+
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
         applicationId "com.example.weishu.contentprovider_management"
-        minSdkVersion 15
-        targetSdkVersion 23
+        minSdkVersion 19
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
